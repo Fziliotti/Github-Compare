@@ -62,6 +62,7 @@ CompareList.propTypes = {
       stargazers_count: PropTypes.number,
       forks_count: PropTypes.number,
       open_issues_count: PropTypes.number,
+      description: PropTypes.string,
       pushed_at: PropTypes.string,
     }),
   ).isRequired,

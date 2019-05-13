@@ -9,6 +9,10 @@ export const Container = styled.div`
 `;
 
 export const Repository = styled.div`
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
   width: 250px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
@@ -51,7 +55,7 @@ export const Repository = styled.div`
         font-style: italic;
       }
 
-      &:nth-child(2n - 1) {
+      &:nth-child(odd) {
         background: #f5f5f5;
       }
     }
