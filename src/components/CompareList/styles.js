@@ -28,6 +28,9 @@ export const Repository = styled.div`
 
     img {
       width: 64px;
+      @media (max-width: 768px) {
+        width: 30%;
+      }
     }
 
     strong {

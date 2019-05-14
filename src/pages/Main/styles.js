@@ -4,12 +4,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  margin: 30px 0;
+  img {
+    @media (max-width: 768px) {
+      height: 40px;
+      margin: 30px 0;
+    }
+  }
 `;
 
 export const Form = styled.form`
   margin-top: 20px;
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   display: flex;
 
@@ -22,6 +28,12 @@ export const Form = styled.form`
     color: #444;
     border-radius: 3px;
     border: ${props => (props.withError ? '2px solid #f00' : 0)};
+
+    @media (max-width: 768px) {
+      width: 80%;
+      padding: 0 10px;
+      font-size: 16px;
+    }
   }
 
   button {
@@ -37,6 +49,12 @@ export const Form = styled.form`
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.2s linear;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 60px;
+      margin-left: 5px;
+    }
 
     &:hover {
       background: #52d89f;

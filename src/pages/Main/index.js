@@ -110,7 +110,6 @@ export default class Main extends Component {
           removeRepository={this.handleRemoveRepository}
           updateRepository={this.handleUpdateRepository}
         />
-        
       </Container>
     );
   }
