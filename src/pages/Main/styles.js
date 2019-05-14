@@ -5,12 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 30px 0;
-  img {
-    @media (max-width: 768px) {
-      height: 40px;
-      margin: 30px 0;
-    }
-  }
 `;
 
 export const Form = styled.form`
